@@ -1,0 +1,43 @@
+$azul-claro: #027EA6;
+section {
+    .container {
+        position: relative;
+        .imagemBanner {
+            width: 100%;
+        }
+        .texto-compartilhado {
+            position: absolute;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            width: 47%;
+            left: 8.5%;
+        }
+        
+        h1 {
+            @extend .texto-compartilhado; 
+            top: 16%;
+            font-size: 80px;
+        }
+        p {
+            @extend .texto-compartilhado; 
+            top: 50%;
+            font-size: 2em;
+            font-weight: lighter;
+        }
+        button{
+            @extend .texto-compartilhado;
+            top: 67.5%;
+            font-size: 2em;
+            font-weight: lighter;
+            border-radius: 11px;
+            border:none;
+            width: 12%;
+            padding: 0.5em;
+            color: $azul-claro;
+        }
+        span{
+            font-weight: 600;
+        }
+    }
+}
