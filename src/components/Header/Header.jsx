@@ -1,5 +1,6 @@
 import "./style.scss"
 import Logo from "../../../public/assets/logoP.png"
+import { Link } from "react-router-dom"
 export default function Header() {
 
     return (
@@ -8,7 +9,7 @@ export default function Header() {
             <header>
                 <nav>
                     <div className='divOpcoes'>
-                        <img src={Logo} alt="logo fluence" />
+                        <img className="logo" src={Logo}  alt="logo fluence" />
                         <ul>
                             <li>Home</li>
                             <li>Solução</li>
@@ -17,8 +18,8 @@ export default function Header() {
                         </ul>
 
                         <ul className="ulLogin">
-                            <li><button><a href="#">Cadastra-se</a></button></li>
-                            <li><a href="">Login</a></li>
+                            <li><button><Link to={"/cadastro"}>Cadastra-se</Link></button></li>
+                            <li><Link to={"/login"} href="">Login</Link></li>
                         </ul>
 
                     </div>
